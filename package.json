@@ -1,28 +1,28 @@
 {
-  "name": "istanbul-instrumenter-loader",
-  "version": "0.1.2",
-  "description": "istanbul instrumenter loader for webpack",
+  "name": "isparta-instrumenter-loader",
+  "version": "0.1.0",
+  "description": "isparta instrumenter loader for webpack",
   "keywords": [
     "webpack",
     "loader",
-    "istanbul",
+    "isparta",
     "instrumenter",
     "coverage"
   ],
-  "homepage": "https://github.com/deepsweet/istanbul-instrumenter-loader",
+  "homepage": "https://github.com/ColCh/isparta-instrumenter-loader",
   "repository": {
     "type": "git",
-    "url": "git://github.com/deepsweet/istanbul-instrumenter-loader.git"
+    "url": "git://github.com/ColCh/isparta-instrumenter-loader.git"
   },
   "author": {
-    "name": "Kir Belevich",
-    "email": "kir@soulshine.in",
-    "url": "https://github.com/deepsweet"
+    "name": "Max Sysoev",
+    "email": "colchgh@gmail.com",
+    "url": "https://github.com/ColCh"
   },
   "main": "index.js",
   "peerDependencies": {
-    "istanbul": "^0.3.2",
-    "webpack": "^1.4.3"
+    "isparta": "^1.2.0",
+    "webpack": "^1.5.3"
   },
   "devDependencies": {
     "eslint": "^0.8.2",

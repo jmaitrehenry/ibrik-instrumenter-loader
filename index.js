@@ -1,9 +1,9 @@
 'use strict';
 
-var istanbul = require('istanbul');
+var isparta = require('isparta');
 
 module.exports = function(source) {
-    var instrumenter = new istanbul.Instrumenter({
+    var instrumenter = new isparta.Instrumenter({
         embedSource: true,
         noAutoWrap: true
     });

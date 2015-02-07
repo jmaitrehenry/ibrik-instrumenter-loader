@@ -1,18 +1,12 @@
-## Istanbul instrumenter loader for [webpack](https://webpack.github.io/)
+## Isparta instrumenter loader for [webpack](https://webpack.github.io/)
 
-[![npm](http://img.shields.io/npm/v/istanbul-instrumenter-loader.svg?style=flat-square)](https://www.npmjs.org/package/istanbul-instrumenter-loader)
-[![travis](http://img.shields.io/travis/deepsweet/istanbul-instrumenter-loader.svg?style=flat-square)](https://travis-ci.org/deepsweet/istanbul-instrumenter-loader)
-[![climate](http://img.shields.io/codeclimate/github/deepsweet/istanbul-instrumenter-loader.svg?style=flat-square)](https://codeclimate.com/github/deepsweet/istanbul-instrumenter-loader/code)
-[![peer deps](http://img.shields.io/david/peer/deepsweet/istanbul-instrumenter-loader.svg?style=flat-square)](https://david-dm.org/deepsweet/istanbul-instrumenter-loader#info=peerDependencies)
-[![gratipay](http://img.shields.io/gratipay/deepsweet.svg?style=flat-square)](https://gratipay.com/deepsweet/)
-
-Instrument JS files with [Istanbul](https://github.com/gotwarlost/istanbul) for subsequent code coverage reporting.<br/>
-"Forked" from [unfold/istanbul-instrument-loader](https://github.com/unfold/istanbul-instrument-loader).
+Instrument JS files with [Isparta](https://github.com/douglasduteil/isparta) for subsequent code coverage reporting.<br/>
+Forked from [deepsweet/istanbul-instrumenter-loader](https://github.com/deepsweet/istanbul-instrumenter-loader). Thank you for your work :thumbs_up:
 
 ### Install
 
 ```sh
-$ npm i -S istanbul-instrumenter-loader
+$ npm i -S isparta-instrumenter-loader
 ```
 
 ### Usage
@@ -44,12 +38,16 @@ config.set({
     webpack: {
         ...
         module: {
+            preLoaders: [ // << add subject as webpack's preloader
+                {
+                  test: /(\.jsx)|(\.js)$/,
+                  // exclude this dirs from coverage
+                  exclude: /(test|node_modules|bower_components)\//,
+                  loader: 'isparta-instrumenter-loader'
+                },
+            ],
+            // other webpack loaders ...
             loaders: [ ... ],
-            postLoaders: [ { // << add subject as webpack's postloader
-                test: /\.js$/,
-                exclude: /(test|node_modules|bower_components)\//,
-                loader: 'istanbul-instrumenter'
-            } ]
         },
         ...
     }
