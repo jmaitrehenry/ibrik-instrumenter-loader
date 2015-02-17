@@ -21,7 +21,7 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "isparta": "^1.2.0",
+    "isparta": "^2.0.0",
     "webpack": "^1.5.3"
   },
   "devDependencies": {
