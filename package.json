@@ -34,5 +34,9 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "dependencies": {
+    "loader-utils": "^0.2.6",
+    "lodash": "^3.5.0"
+  }
 }
