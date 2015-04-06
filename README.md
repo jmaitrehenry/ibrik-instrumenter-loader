@@ -1,7 +1,7 @@
 ## Isparta instrumenter loader for [webpack](https://webpack.github.io/)
 
 Instrument JS files with [Isparta](https://github.com/douglasduteil/isparta) for subsequent code coverage reporting.<br/>
-Forked from [deepsweet/istanbul-instrumenter-loader](https://github.com/deepsweet/istanbul-instrumenter-loader). Thank you for your work :thumbs_up:
+Forked from [deepsweet/istanbul-instrumenter-loader](https://github.com/deepsweet/istanbul-instrumenter-loader). Thank you for your work :thumbsup:
 
 ### Install
 
