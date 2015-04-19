@@ -21,7 +21,6 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "isparta": "^2.0.0",
     "webpack": "^1.5.3"
   },
   "devDependencies": {
@@ -36,6 +35,7 @@
   },
   "license": "WTFPL",
   "dependencies": {
+    "isparta": "^2.0.0",
     "loader-utils": "^0.2.6",
     "lodash": "^3.5.0"
   }
