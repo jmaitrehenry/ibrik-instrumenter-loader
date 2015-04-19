@@ -1,7 +1,6 @@
 ## Isparta instrumenter loader for [webpack](https://webpack.github.io/)
 
-Instrument JS files with [Isparta](https://github.com/douglasduteil/isparta) for subsequent code coverage reporting.<br/>
-Forked from [deepsweet/istanbul-instrumenter-loader](https://github.com/deepsweet/istanbul-instrumenter-loader). Thank you for your work :thumbsup:
+Instrument JS files with [Isparta](https://github.com/douglasduteil/isparta) for subsequent code coverage reporting. Forked from [deepsweet/istanbul-instrumenter-loader](https://github.com/deepsweet/istanbul-instrumenter-loader). Thank you for your work :thumbsup:
 
 ### Install
 
@@ -15,7 +14,7 @@ Useful to get work together [karma-webpack](https://github.com/webpack/karma-web
 
 1. [karma-webpack config](https://github.com/webpack/karma-webpack#karma-webpack)
 2. [karma-coverage config](https://github.com/karma-runner/karma-coverage#configuration)
-3. replace `karma-coverage`'s code instrumenting with `istanbul-instrumenter-loader`'s one:
+3. replace `karma-coverage`'s code instrumenting with `isparta-instrumenter-loader`'s one:
 
 ```javascript
 config.set({
