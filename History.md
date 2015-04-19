@@ -1,3 +1,10 @@
+v0.2.1 / 2015-04-19
+===================
+
+  * Fix typos in README.md
+  * Up isparta version to 3
+  * Move `isparta` from *peerDependencies* to *dependencies* section
+
 v0.2.0 / 2015-04-06
 ===================
 
