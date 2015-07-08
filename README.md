@@ -2,6 +2,8 @@
 
 Instrument JS files with [Ibrik](https://github.com/Constellation/ibrik) for subsequent code coverage reporting.
 
+[![Downloads](http://img.shields.io/npm/dm/ibrik-instrumenter-loader.svg)](https://npmjs.org/package/ibrik-instrumenter-loader) [![Code Climate](https://codeclimate.com/github/vectart/ibrik-instrumenter-loader/badges/gpa.svg)](https://codeclimate.com/github/vectart/ibrik-instrumenter-loader) [![David Dependencies](https://david-dm.org/vectart/ibrik-instrumenter-loader.svg)](https://david-dm.org/vectart/ibrik-instrumenter-loader)
+
 ### Install
 
 ```sh
