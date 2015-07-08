@@ -2,16 +2,17 @@
 
 var loaderUtils = require('loader-utils');
 var _ = require('lodash');
-var isparta = require('isparta');
+var ibrik = require('ibrik');
 
 module.exports = function(source) {
 
     var query = loaderUtils.parseQuery(this.query);
     var options = _.assign({
-        embedSource: true,
+        embedSource: false,
         noAutoWrap: true
     }, query);
-    var instrumenter = new isparta.Instrumenter(options);
+
+    var instrumenter = new ibrik.Instrumenter(options);
 
     if (this.cacheable) {
         this.cacheable();

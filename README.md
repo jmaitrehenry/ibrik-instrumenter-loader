@@ -1,11 +1,11 @@
-## Isparta instrumenter loader for [webpack](https://webpack.github.io/)
+## Ibrik instrumenter loader for [webpack](https://webpack.github.io/)
 
-Instrument JS files with [Isparta](https://github.com/douglasduteil/isparta) for subsequent code coverage reporting. Forked from [deepsweet/istanbul-instrumenter-loader](https://github.com/deepsweet/istanbul-instrumenter-loader). Thank you for your work :thumbsup:
+Instrument JS files with [Ibrik](https://github.com/Constellation/ibrik) for subsequent code coverage reporting.
 
 ### Install
 
 ```sh
-$ npm i -S isparta-instrumenter-loader
+$ npm install --save-dev ibrik-instrumenter-loader
 ```
 
 ### Usage
@@ -14,7 +14,7 @@ Useful to get work together [karma-webpack](https://github.com/webpack/karma-web
 
 1. [karma-webpack config](https://github.com/webpack/karma-webpack#karma-webpack)
 2. [karma-coverage config](https://github.com/karma-runner/karma-coverage#configuration)
-3. replace `karma-coverage`'s code instrumenting with `isparta-instrumenter-loader`'s one:
+3. replace `karma-coverage`'s code instrumenting with `ibrik-instrumenter-loader`'s one:
 
 ```javascript
 config.set({
@@ -39,10 +39,10 @@ config.set({
         module: {
             preLoaders: [ // << add subject as webpack's preloader
                 {
-                  test: /(\.jsx)|(\.js)$/,
+                  test: /\.coffee$/,
                   // exclude this dirs from coverage
                   exclude: /(test|node_modules|bower_components)\//,
-                  loader: 'isparta-instrumenter-loader'
+                  loader: 'ibrik-instrumenter-loader'
                 },
             ],
             // other webpack loaders ...
